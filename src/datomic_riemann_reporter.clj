@@ -42,9 +42,9 @@
           {:service (str "datomic " (name metric-name) " " (name sub-metric-name))
            :metric sub-metric-value
            :state "ok"
-           :ttl 60}))
+           :ttl 600}))
       (send-event
         {:service (str "datomic " (name metric-name))
          :metric value
          :state "ok"
-         :ttl 60}))))
+         :ttl 600}))))
